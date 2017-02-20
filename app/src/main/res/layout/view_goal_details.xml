@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ebe9e9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GOAL RANK"
+        android:id="@+id/textViewGoalRank_"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignStart="@+id/textViewGoalRank_"
+        android:layout_alignEnd="@+id/textViewGoalRank_"
+        android:layout_below="@+id/textViewGoalRank_" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:id="@+id/buttonUpdateGoal"
+        android:layout_below="@+id/editTextGoalCost_"
+        android:layout_toStartOf="@+id/buttonForecastGoal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORECAST"
+        android:id="@+id/buttonForecastGoal"
+        android:layout_alignTop="@+id/buttonUpdateGoal"
+        android:layout_toEndOf="@+id/textViewMoneySaved" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextGoalName_"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextGoalCost_"
+        android:layout_below="@+id/editTextGoalName_"
+        android:layout_alignStart="@+id/editTextGoalName_"
+        android:layout_alignEnd="@+id/editTextGoalName_"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount Saved"
+        android:id="@+id/textViewMoneySaved"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
+
+</RelativeLayout>

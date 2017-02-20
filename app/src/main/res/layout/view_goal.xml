@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GOALS"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GOAL RANK"
+        android:id="@+id/textViewGoalRank"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FORECASTED DATE OF ACHIEVING GOAL:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textViewGoalRank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GOAL DATE FORECAST"
+        android:id="@+id/textViewGoalDateForecast"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DATE YOU WANNA ACHIEVE THE GOAL:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textViewGoalDateForecast"
+        android:layout_alignParentStart="true" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-30dp"
+        android:id="@+id/datePickerGoal"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ESTIMATED COST"
+        android:id="@+id/textViewEstimatedCost"
+        android:layout_above="@+id/buttonGoToViewGoal"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:id="@+id/buttonGoToViewGoal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textViewGoalRank" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Goal Name"
+        android:id="@+id/textViewNameGoal"
+        android:layout_below="@+id/textViewGoalRank"
+        android:layout_toStartOf="@+id/textViewGoalRank" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Goal Cost"
+        android:id="@+id/textViewCostOfGoal"
+        android:layout_alignTop="@+id/textViewNameGoal"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:id="@+id/buttonCalculate"
+        android:layout_above="@+id/textViewEstimatedCost"
+        android:layout_toEndOf="@+id/textViewNameGoal" />
+
+</RelativeLayout>
